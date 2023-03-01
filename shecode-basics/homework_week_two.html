@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/assets/demo-cf230aeb3c05a404f0d2a9803b51aaf8c3c01fe89015490cd324bdcbecbec3b5.css"
+      media="all"
+      data-turbolinks-track="reload"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+    <style>
+      html {
+        background-color: white;
+      }
+      body {
+        display: block;
+        margin: 8px;
+      }
+
+      .demo-project {
+        box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+        background-image: linear-gradient(to top, #d1deda 0%, #023c5d 100%);
+        border-radius: 10px;
+        color: #fff;
+        width: 50%;
+        padding: 30px;
+        margin: 30px auto;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+      .demo-project h1 {
+        text-align: center;
+        font-weight: bold;
+        border: 1px dashed #fff;
+        padding: 20px;
+
+        border-radius: 4px;
+      }
+      h2 {
+        text-align: center;
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: lighter;
+        font-family: Tahoma;
+        letter-spacing: 2px;
+      }
+      .demo-project img {
+        margin: 0 auto;
+        padding: 6px;
+        display: block;
+      }
+      p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-family: "Barlow Condensed", sans-serif;
+      }
+      .demo-project p {
+        line-height: 1.5;
+        font-size: 24px;
+      }
+      .small {
+        font-size: smaller;
+      }
+      .demo-project button {
+        background: #023c5d;
+        border: none;
+        font-size: 10px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        color: #fff;
+        display: block;
+        padding: 10px 20px;
+        cursor: pointer;
+        opacity: 1;
+        box-shadow: 0 1px 20px rgb(0 0 0 / 50%);
+        margin: 30px auto;
+        transition: all 1s ease-in-out;
+      }
+
+      hr.style-one {
+        border: 0.5px;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+      }
+      h1 {
+        font-size: 50px;
+        font-family: "Zeyada", cursive;
+        letter-spacing: 3px;
+      }
+      button:hover {
+        color: #29739d;
+        background-color: white;
+        cursor: pointer;
+      }
+      .responsive {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo-project">
+      <h1>Lovely Nepal</h1>
+      <h2>Especially in Annapurna Base Camp</h2>
+      <hr class="style-one" />
+
+      <img
+        src="https://www.thirdrockadventures.com/assets-back/images/blog/113-annapurna-base-camp-trek.jpggDI.jpg"
+        ,
+        width="500"
+        ,
+        height="300"
+        class="responsive"
+      />
+      <hr class="style-one" />
+      <p>
+        <strong>Annapurna Base Camp</strong> also called <em>ABC </em>or
+        Annapurna Sanctuary is the most popular trekking destination located in
+        North western Nepal’s Annapurna region. It is located in the heart of
+        the Annapurna Conservation Area, west of Pokhara. A short trek to the
+        base camp (4,130m/13,547ft) offers dominating views of the Annapurna I,
+        the first mountain over 8000m to be climbed, and its surrounding range.
+      </p>
+      <p>
+        In addition to all the glamor of a Himalayan landscape, the Annapurna
+        Base Camp trek is also relatively cheaper, accessible, and shorter. The
+        legacy of the Annapurna range and the stories surrounding its
+        mountaineering history adds even more value to the Annapurna Base Camp
+        trek. The ABC trek is one of the few trekking routes that are mostly
+        forested with unique flora and fauna. Passing through ethnic Gurung and
+        Magar settlement further amplifies the whole experience of the trek.
+      </p>
+      <small
+        ><a
+          style="text-decoration: none"
+          href="https://www.thirdrockadventures.com/blog/annapurna-base-camp-trek-a-complete-guide"
+          target="_blank"
+          >Read on this link</a
+        ></small
+      >
+      <br />
+      <button onclick="apply()">Join for Treckking</button>
+      <script>
+        function apply() {
+          let firstName = prompt("What is your first name?");
+          let age = prompt("How old are you?");
+          let heading = document.querySelector("h1");
+          if (age >= 8) {
+            heading.innerHTML =
+              "Hi " +
+              firstName +
+              " you are allowed to join treckking in Annapura Base Camp😍";
+          } else {
+            heading.innerHTML =
+              "Sorry " +
+              firstName +
+              ", you can't join the trekking in Nepal yet";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+body {
+  margin: 0 auto !important;
+  max-width: 950px;
+  max-height: 250px;
+  padding: 25px;
+  /* font-family: "Lobster Two", cursive; */
+  font-family: "Shantell Sans", cursive !important;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0rem;
+  justify-content: space-between;
+}
+img {
+  list-style: none;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+  width: 50px;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #6287a1 !important;
+  width: 350px;
+}
+input:focus {
+  border-color: green;
+  outline: 1px solid #000;
+}
+.btn-secondary {
+  --bs-btn-bg: #6287a1;
+  --bs-btn-border-color: #6287a1;
+  --bs-btn-hover-color: #6287a1;
+  --bs-btn-hover-bg: #6287a1;
+  --bs-btn-hover-border-color: #6287a1;
+  --bs-btn-active-color: #6287a1;
+  --bs-btn-active-bg: #6287a1;
+  --bs-btn-active-border-color: #6287a1;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
+}
+.big-icon {
+  width: 200px;
+}
+.week-days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  margin-top: -10px;
+  margin-bottom: -2px;
+}
+p {
+  color: grey;
+}
+
+.wrapper {
+  /* padding-left: 65px;
+  padding-top: 35px; */
+  width: 100%;
+  padding: 50px;
+}
+.week-weather-wrapper {
+  /* padding-left: 40px; */
+  /* width: 90%; */
+  justify-content: space-between;
+}
+.container {
+  padding-left: 0px;
+}
+.row-weather {
+  display: flex;
+  flex-direction: row;
+}
+.city-descriptions {
+  padding-top: 60px;
+}
+.abc {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  line-height: 10px;
+  padding-bottom: 20px;
+}
+.country {
+  font-size: 10px;
+  margin-left: 270px;
+  border-radius: 5px !important;
+}
+.small {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.text-primary:hover {
+  color: blueviolet !important;
+}
+.text-warning:hover {
+  color: yellowgreen !important;
+}
+.text-success:hover {
+  color: turquoise !important;
+}
+.text-danger:hover {
+  color: rgb(18, 113, 222) !important;
+}
+.city-name {
+  font-size: 50px;
+  padding-bottom: 40px;
+  margin-top: -20px;
+}
+.temperature {
+  font-size: 90px;
+}
+@media only screen and (max-width: 600px) {
+  .city-name {
+    font-size: 30px;
+    padding-bottom: 40px;
+    margin-top: -20px;
+  }
+  .temperature {
+    font-size: 70px;
+  }
+}

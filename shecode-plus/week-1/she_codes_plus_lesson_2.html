@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      div {
+        text-align: center;
+        background-color: rgb(243, 221, 248);
+        width: 700px;
+        border: 1px solid green;
+        padding: 30px;
+        margin: 50px auto;
+      }
+      .text {
+        font-family: "Barlow Condensed", sans-serif;
+        color: rgb(199, 15, 209);
+        font-family: "Courier";
+        font-size: 15px;
+        margin: 10px 0 0 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 50em;
+        animation: type 10s steps(60, end);
+      }
+      @keyframes type {
+        from {
+          width: 0;
+        }
+      }
+      .title {
+        color: royalblue;
+        text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
+      }
+      .icon {
+        text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+      }
+      /* unvisited link */
+      h5:link {
+        color: green;
+      }
+
+      /* visited link */
+      h5:visited {
+        color: green;
+      }
+
+      /* mouse over link */
+      h5:hover {
+        color: red;
+      }
+
+      /* selected link */
+      h5:active {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="icon">👩‍💻</h1>
+      <h1 class="title" style="color: blueviolet">
+        SheCodes is a Coding Workshop for Women
+      </h1>
+      <h4 class="title">Access a new career in Technology</h4>
+
+      <p class="text">
+        SheCodes teaches coding, design and management skills to women
+      </p>
+
+      <h5 class="hovertext">Only 25 spots available!</h5>
+
+      <a href="#">Apply now</a>
+      <p>🌟</p>
+    </div>
+  </body>
+</html>

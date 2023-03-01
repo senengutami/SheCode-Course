@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Exercise</title>
+    <link href="./src/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <!--first section-->
+
+    <section>
+      <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+        <form>
+          <input type="text" placeholder="search for a city" id="cityInput" />
+          <button id="search">Search</button>
+          <button id="current">Current</button>
+        </form>
+
+        <h2 id="cityName">Kathmandu</h2>
+        <!--div-->
+        <div>
+          <p id="day">Wednesday 20:00</p>
+          <p id="temperature-description">cloudy</p>
+        </div>
+
+        <div class="center">
+          <h4>
+            <strong id="number">2</strong>
+          </h4>
+          <sup class="small-text" ;
+            ><a href="#" id="celcius">°C </a> |
+            <a href="#" id="fahrenheit">°F</a></sup
+          >
+        </div>
+      </div>
+    </section>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

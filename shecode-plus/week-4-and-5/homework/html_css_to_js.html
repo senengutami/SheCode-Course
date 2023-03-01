@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="src/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Shantell+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="wrapper">
+          <section class="cities fs-4">
+            <ul>
+              <li class="text-primary">Bhaktapur</li>
+              <li class="text-warning">Semarang</li>
+              <li class="text-success">Kuala Lumpur</li>
+              <li class="text-danger">Sydney</li>
+            </ul>
+          </section>
+          <section class="search pt-3">
+            <form class="container">
+              <input
+                type="text"
+                placeholder="Search for a city"
+                id="cityInput"
+              />
+              <button type="button" class="btn btn-secondary" id="search">
+                Search
+              </button>
+              <button type="button" class="btn btn-secondary" id="current">
+                Current
+              </button>
+            </form>
+          </section>
+          <section class="city-descriptions">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <div class="city">
+                    <!-- <span class="border border-2 rounded-pill country">NP</span> -->
+                    <!-- id = city -->
+                    <h2 class="city-name" id="cityName">
+                      Kathmandu<sup
+                        ><span
+                          class="border border-2"
+                          style="border-radius: 5px; font-size: 14px"
+                          >NP</span
+                        ></sup
+                      >
+                    </h2>
+                    <div class="abc">
+                      <p id="day">Thursday 16:55</p>
+                      <p id="city-description">Cloudy</p>
+                    </div>
+                  </div>
+                  <div class="degree">
+                    <h5 class="temperature">
+                      <!-- id = temperature -->
+                      <strong id="number">23</strong
+                      ><sup class="small-text"
+                        ><a href="#" id="celcius">°C </a>
+                        |
+                        <a href="#" id="fahrenheit">°F</a></sup
+                      >
+                    </h5>
+                    <img src="image/sun-rain.png" class="big-icon" />
+                  </div>
+                </div>
+                <div class="col-6 abc">
+                  <div>
+                    <p>Preciptation: 60%</p>
+                    <p>Wind 2km/h</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <ul class="week-weather-wrapper">
+              <li>
+                <div class="week-days">
+                  <p>Fri</p>
+                  <img src="image/sun-rain.png" class="icon" />
+                  <p>23</p>
+                </div>
+              </li>
+              <li>
+                <div class="week-days">
+                  <p>Sat</p>
+                  <img src="image/sun-rain.png" class="icon" />
+                  <p>24</p>
+                </div>
+              </li>
+              <li>
+                <div class="week-days">
+                  <p>Sun</p>
+                  <img src="image/sun-rain.png" class="icon" />
+
+                  <p>20</p>
+                </div>
+              </li>
+              <li>
+                <div class="week-days">
+                  <p>Mon</p>
+                  <img src="image/sun-rain.png" class="icon" />
+                  <p>21</p>
+                </div>
+              </li>
+              <li>
+                <div class="week-days">
+                  <p>Tue</p>
+                  <img src="image/sun-rain.png" class="icon" />
+                  <p>22</p>
+                </div>
+              </li>
+              <li>
+                <div class="week-days">
+                  <p>Wed</p>
+                  <img src="image/sun-rain.png" class="icon" />
+                  <p>22</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./src/index.js"></script>
+  </body>
+</html>
