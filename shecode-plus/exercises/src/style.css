@@ -20,3 +20,8 @@ body {
 form {
   padding-bottom: 30px;
 }
+
+h2 {
+  color:blueviolet !important;
+  font-weight: bold !important;
+}
