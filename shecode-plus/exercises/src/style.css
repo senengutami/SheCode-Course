@@ -25,3 +25,7 @@ h2 {
   color:blueviolet !important;
   font-weight: bold !important;
 }
+
+.temperature {
+  color:cadetblue;
+}
